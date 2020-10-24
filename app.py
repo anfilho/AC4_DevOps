@@ -3,18 +3,18 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-@app.route('/')
 
+@app.route('/')
 def fib():
 	prox = 1
    	ant = 0
    	res = "0, "
    	for i in range(50):
-       		tmp = prox
-       		prox = prox + ant
-       		ant = tmp
+		tmp = prox
+		prox = prox + ant
+		ant = tmp
 		if i <= 49:
-       			res += str(prox) + ", "
+			res += str(prox) + ", "
 		else:
 			res += str(prox) 
 
