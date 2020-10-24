@@ -13,11 +13,10 @@ def fib():
 		tmp = prox
 		prox = prox + ant
 		ant = tmp
-		if i <= 49:
+		if i < 49:
 			res += str(prox) + ", "
 		else:
-			res += str(prox) 
-
+			res += str(prox) + "."
    	return res
 
 if __name__ == "__main__":
